@@ -31,4 +31,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-    __import__("os").system("pause")
+    for i in range(5, 0, -1):
+        print(f"Close in {i}s...", end='\r')
+        time.sleep(1)
